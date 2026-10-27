@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "pinecone": {
+      "command": "node",
+      "args": ["/Users/joaquin/Documents/Codigo/pinecone/mcp/servidor.js"]
+    }
+  }
+}

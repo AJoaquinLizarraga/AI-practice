@@ -1,0 +1,29 @@
+{
+  "name": "pinecone-rag-demo",
+  "version": "1.0.0",
+  "description": "Proyecto didáctico: cómo funciona una base de datos vectorial (Pinecone) + RAG con un LLM local vía Ollama",
+  "type": "module",
+  "main": "main.js",
+  "scripts": {
+    "teoria": "node scripts/0-teoria.js",
+    "crear": "node --env-file-if-exists=.env scripts/1-crear-indice.js",
+    "cargar": "node --env-file-if-exists=.env scripts/2-cargar-datos.js",
+    "buscar": "node --env-file-if-exists=.env scripts/3-buscar.js",
+    "rag": "node --env-file-if-exists=.env scripts/4-rag.js",
+    "chat": "node --env-file-if-exists=.env main.js",
+    "borrar": "node --env-file-if-exists=.env scripts/9-borrar-indice.js"
+  },
+  "keywords": [
+    "pinecone",
+    "vector-database",
+    "embeddings",
+    "rag",
+    "ollama"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "@pinecone-database/pinecone": "^8.1.0",
+    "zod": "^4.4.3"
+  }
+}
